@@ -1,4 +1,4 @@
-package gestionconcurso;
+package CapaLogicaNegocio;
 
 public class GestionConcurso {
 
