@@ -11,22 +11,19 @@ public class Facultad {
         carreras = new ArrayList<>();
     }
 
-    public String getNombre() {
+    public String mostrarNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public void tomarNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public ArrayList<Carrera> getCarreras() {
+    public ArrayList<Carrera> obtenerCarreras() {
         return carreras;
     }
 
     public void setCarreras(ArrayList<Carrera> carreras) {
         this.carreras = carreras;
     }
-    
-    
-    
 }
