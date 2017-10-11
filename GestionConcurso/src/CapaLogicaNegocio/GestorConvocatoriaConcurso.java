@@ -11,15 +11,19 @@ public class GestorConvocatoriaConcurso {
     private ArrayList<String> listadoCarrerasFacultadUsuarioLogueado;
     
     //--Referencias a Objetos
+    private ArrayList<Catedra> catedras; 
+    private ArrayList<Carrera> carreras; 
     private ArrayList<Carrera> carrerasFacultadUsuarioLogueado; 
     private PantallaConvocatoriaConcurso pantalla;
     
             
     //Metodos
-    public GestorConvocatoriaConcurso(Sesion activa, PantallaConvocatoriaConcurso pantalla){
+    public GestorConvocatoriaConcurso(ArrayList<Catedra> catedras, ArrayList<Carrera> carreras, Sesion activa, PantallaConvocatoriaConcurso pantalla){
         // Por Parametros
         this.activa = activa;
         this.pantalla = pantalla;
+        this.carreras = carreras;
+        this.catedras = catedras;
         
         // Creacion        
         this.nombreFacultadUsuarioLogueado = "";
@@ -49,7 +53,6 @@ public class GestorConvocatoriaConcurso {
         
         pantalla.presentarNombreFacultad(this.nombreFacultadUsuarioLogueado);
         pantalla.presentarCarreras(this.listadoCarrerasFacultadUsuarioLogueado);
-        
         
         
     }

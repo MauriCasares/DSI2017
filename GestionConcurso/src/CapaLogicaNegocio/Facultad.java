@@ -26,4 +26,8 @@ public class Facultad {
     public void setCarreras(ArrayList<Carrera> carreras) {
         this.carreras = carreras;
     }
+    
+    public void agregarCarrera(Carrera carrera){
+        this.carreras.add(carrera);
+    }
 }

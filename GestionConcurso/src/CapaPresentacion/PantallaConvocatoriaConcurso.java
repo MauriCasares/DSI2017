@@ -7,7 +7,7 @@ public class PantallaConvocatoriaConcurso
 {
     private GestorConvocatoriaConcurso gestor;
     
-    private PantallaConvocatoriaConcurso(){
+    public PantallaConvocatoriaConcurso(){
         
     }
     
